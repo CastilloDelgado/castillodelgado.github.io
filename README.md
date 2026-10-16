@@ -1,6 +1,6 @@
 # CV web · Marco Castillo
 
-CV de una sola página con Vue 3 y Vite. Diseño responsive, navegación por anclas, menú móvil, estilos de impresión y descarga del CV original. No requiere backend.
+CV de una sola página con Vue 3 y Vite. Diseño responsive, navegación por anclas, menú móvil, estilos de impresión y descarga del CV original. Disponible en español e inglés, con selector ES/EN y preferencia guardada en el navegador. No requiere backend.
 
 ## Desarrollo
 
@@ -43,7 +43,14 @@ Guía oficial: https://docs.github.com/en/pages/getting-started-with-github-page
 
 ## Editar contenido
 
-- `src/App.vue`: textos, experiencia, proyectos y habilidades. Los datos de experiencia y conocimientos están al principio del archivo.
+- `src/App.vue`: composición de las secciones y estado del idioma.
+- `src/components/sections/`: perfil, experiencia, proyectos, conocimientos, formación y contacto.
+- `src/components/SiteHeader.vue`: navegación y controles del encabezado.
+- `src/components/ExperienceCard.vue` y `ProjectCard.vue`: presentación de cada experiencia y proyecto.
+- `src/components/ui/`: encabezados de sección, listas de tecnologías y selector de idioma reutilizables.
+- `src/content/es.js` y `src/content/en.js`: contenido completo en ambos idiomas. Conserva la misma estructura al añadir textos.
+- `src/composables/useLanguage.js`: selección del idioma, persistencia en `localStorage` y actualización de `html[lang]`, descripción y metadatos.
+- `src/data/profile.js`: contacto, enlaces y tecnologías comunes a ambos idiomas.
 - `src/style.css`: colores, tipografía, diseño responsive e impresión.
 - `public/Marco_Castillo_CV_Software.pdf`: CV descargable.
 - `index.html`: título, descripción y metadatos para compartir.
@@ -51,5 +58,3 @@ Guía oficial: https://docs.github.com/en/pages/getting-started-with-github-page
 El contenido profesional proviene del CV final de software; el segundo PDF se usa como referencia visual. No se agregaron métricas, certificaciones, enlaces de proyectos ni responsabilidades no documentadas. Las ilustraciones de proyectos son composiciones gráficas, no capturas reales.
 
 Las fuentes se solicitan a Google Fonts, con fuentes de sistema como respaldo. El teléfono y correo del CV aparecen como enlaces públicos de contacto.
-# cv
-# cv
