@@ -5,7 +5,7 @@ export default {
   },
   header: {
     skip: 'Skip to content', home: 'Marco Castillo, home', navigation: 'Main navigation',
-    language: 'Select language', menu: 'Menu +', close: 'Close −', contact: 'Let’s talk',
+    language: 'Select language', menu: 'Menu', close: 'Close', contact: 'Let’s talk',
     sections: [
       { id: 'perfil', label: 'Profile' }, { id: 'experiencia', label: 'Experience' },
       { id: 'proyectos', label: 'Projects' }, { id: 'conocimientos', label: 'Skills' },
