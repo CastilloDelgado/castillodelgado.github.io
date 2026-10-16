@@ -52,3 +52,4 @@ El contenido profesional proviene del CV final de software; el segundo PDF se us
 
 Las fuentes se solicitan a Google Fonts, con fuentes de sistema como respaldo. El teléfono y correo del CV aparecen como enlaces públicos de contacto.
 # cv
+# cv
