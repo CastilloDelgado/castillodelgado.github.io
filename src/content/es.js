@@ -34,7 +34,7 @@ export default {
   profile: {
     intro: ['De la lógica de negocio', 'a una interfaz que funciona'],
     summary: 'Desarrollador de software en Guadalajara, México. Construyo aplicaciones con Vue.js, React, Node.js, Laravel y Java Spring, con experiencia en sistemas en tiempo real y despliegues en la nube.',
-    explore: 'Explora mi experiencia', download: 'Descargar CV', location: 'GUADALAJARA, MÉXICO', stackLabel: 'Tecnologías principales',
+    explore: 'Explora mi experiencia', downloads: { es: 'CV en español', en: 'CV en inglés' }, location: 'GUADALAJARA, MÉXICO', stackLabel: 'Tecnologías principales',
   },
   experience: {
     heading: { eyebrow: '01 / TRAYECTORIA', title: ['Experiencia que', 'se lleva a producción.'], note: 'Aplicaciones de negocio, interfaces en tiempo real y resolución de problemas en entornos reales.' },
@@ -85,6 +85,6 @@ export default {
   },
   contact: {
     label: '05 / CONTACTO', title: ['Construyamos', 'lo que sigue'], emailLabel: 'Enviar correo a Marco Castillo',
-    download: 'Descargar CV en PDF', backToTop: 'Volver arriba',
+    downloads: { es: 'CV en español', en: 'CV en inglés' }, backToTop: 'Volver arriba',
   },
 }

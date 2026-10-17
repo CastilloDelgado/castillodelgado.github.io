@@ -14,7 +14,7 @@ export default {
   profile: {
     intro: ['From business logic', 'to interfaces that work'],
     summary: 'Software developer based in Guadalajara, Mexico. I build applications with Vue.js, React, Node.js, Laravel and Java Spring, with experience in real-time systems and cloud deployment.',
-    explore: 'Explore my experience', download: 'Download CV', location: 'GUADALAJARA, MEXICO', stackLabel: 'Core technologies',
+    explore: 'Explore my experience', downloads: { es: 'CV in Spanish', en: 'CV in English' }, location: 'GUADALAJARA, MEXICO', stackLabel: 'Core technologies',
   },
   experience: {
     heading: { eyebrow: '01 / EXPERIENCE', title: ['Experience that', 'ships to production.'], note: 'Business applications, real-time interfaces and problem-solving in production environments.' },
@@ -101,6 +101,6 @@ export default {
   },
   contact: {
     label: '05 / CONTACT', title: ['Let’s build', 'what’s next'], emailLabel: 'Email Marco Castillo',
-    download: 'Download CV as PDF', backToTop: 'Back to top',
+    downloads: { es: 'CV in Spanish', en: 'CV in English' }, backToTop: 'Back to top',
   },
 }

@@ -45,3 +45,5 @@ footer .inline-icon { width: 12px; height: 12px; }
 
 /* Allow the core technology list to wrap as it grows. */
 .stack-strip { flex-wrap: wrap; }
+
+.actions { flex-wrap: wrap; }

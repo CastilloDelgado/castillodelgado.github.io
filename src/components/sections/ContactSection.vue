@@ -17,7 +17,7 @@ const year = new Date().getFullYear()
       <div class="contact-links">
         <a :href="`mailto:${profile.email}`">{{ profile.email }} <ArrowUpRight class="inline-icon" aria-hidden="true" focusable="false" /></a>
         <a :href="profile.phoneHref">{{ profile.phone }} <ArrowUpRight class="inline-icon" aria-hidden="true" focusable="false" /></a>
-        <a :href="profile.cv" download>{{ content.download }} <Download class="inline-icon" aria-hidden="true" focusable="false" /></a>
+        <a v-for="cv in profile.cvs" :key="cv.language" :href="cv.href" :hreflang="cv.language" download>{{ content.downloads[cv.language] }} <Download class="inline-icon" aria-hidden="true" focusable="false" /></a>
       </div>
       <footer>
         <span>© {{ year }} {{ profile.name }}</span>

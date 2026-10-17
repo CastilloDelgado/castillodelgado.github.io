@@ -4,6 +4,9 @@ export const profile = {
   phone: '+52 33 2536 6795',
   phoneHref: 'tel:+523325366795',
   github: 'https://github.com/castillodelgado',
-  cv: '/Marco_Castillo_CV_Software.pdf',
+  cvs: [
+    { language: 'es', href: '/Marco_Castillo_CV_Espanol.pdf' },
+    { language: 'en', href: '/Marco_Castillo_CV_Software.pdf' },
+  ],
   stack: ['Vue.js', 'React', 'Node.js', 'Laravel', 'Java Spring', 'MySQL', 'AWS'],
 }

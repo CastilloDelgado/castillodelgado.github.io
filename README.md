@@ -52,7 +52,8 @@ Guía oficial: https://docs.github.com/en/pages/getting-started-with-github-page
 - `src/composables/useLanguage.js`: selección del idioma, persistencia en `localStorage` y actualización de `html[lang]`, descripción y metadatos.
 - `src/data/profile.js`: contacto, enlaces y tecnologías comunes a ambos idiomas.
 - `src/style.css`: colores, tipografía, diseño responsive e impresión.
-- `public/Marco_Castillo_CV_Software.pdf`: CV descargable.
+- `public/Marco_Castillo_CV_Software.pdf`: CV descargable en inglés.
+- `public/Marco_Castillo_CV_Espanol.pdf`: CV descargable en español.
 - `index.html`: título, descripción y metadatos para compartir.
 
 El contenido profesional proviene del CV final de software; el segundo PDF se usa como referencia visual. No se agregaron métricas, certificaciones, enlaces de proyectos ni responsabilidades no documentadas. Las ilustraciones de proyectos son composiciones gráficas, no capturas reales.

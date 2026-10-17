@@ -15,7 +15,7 @@ defineProps({ content: { type: Object, required: true } })
         <p>{{ content.summary }}</p>
         <div class="actions">
           <a class="button primary" href="#experiencia">{{ content.explore }} <ArrowDown class="inline-icon" aria-hidden="true" focusable="false" /></a>
-          <a class="text-link" :href="profile.cv" download>{{ content.download }} <Download class="inline-icon" aria-hidden="true" focusable="false" /></a>
+          <a class="text-link" v-for="cv in profile.cvs" :key="cv.language" :href="cv.href" :hreflang="cv.language" download>{{ content.downloads[cv.language] }} <Download class="inline-icon" aria-hidden="true" focusable="false" /></a>
         </div>
       </div>
     </div>
