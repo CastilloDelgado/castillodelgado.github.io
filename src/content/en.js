@@ -1,7 +1,7 @@
 export default {
   meta: {
     title: 'Marco Castillo · Full Stack Developer',
-    description: 'Marco Castillo, Full Stack Developer based in Guadalajara, Mexico. Experience with Vue.js, React, Java Spring, Laravel, real-time applications and cloud deployment.',
+    description: 'Marco Castillo, Full Stack Developer based in Guadalajara, Mexico. Experience with Vue.js, React, Node.js, Java Spring, Laravel, real-time applications and cloud deployment.',
   },
   header: {
     skip: 'Skip to content', home: 'Marco Castillo, home', navigation: 'Main navigation',
@@ -13,7 +13,7 @@ export default {
   },
   profile: {
     intro: ['From business logic', 'to interfaces that work'],
-    summary: 'Software developer based in Guadalajara, Mexico. I build applications with Vue.js, React, Laravel and Java Spring, with experience in real-time systems and cloud deployment.',
+    summary: 'Software developer based in Guadalajara, Mexico. I build applications with Vue.js, React, Node.js, Laravel and Java Spring, with experience in real-time systems and cloud deployment.',
     explore: 'Explore my experience', download: 'Download CV', location: 'GUADALAJARA, MEXICO', stackLabel: 'Core technologies',
   },
   experience: {
@@ -85,9 +85,9 @@ export default {
     heading: { eyebrow: '03 / SKILLS', title: ['My toolkit.'], note: 'Technologies and practices I bring together to develop, deliver and maintain applications.' },
     items: [
       { number: '01', title: 'Frontend', tags: ['JavaScript', 'Vue.js', 'React', 'Nuxt.js', 'Inertia.js'], text: 'Web interfaces, API integration, administration workflows and business logic. Experience with real-time updates and connection management.' },
-      { number: '02', title: 'Backend and data', tags: ['Laravel', 'Java Spring', 'MySQL'], text: 'Full-stack applications, user accounts, content management, data persistence and calculation rules integrated with the frontend.' },
+      { number: '02', title: 'Backend and data', tags: ['Node.js', 'Laravel', 'Java Spring', 'MySQL', 'Cloud Firestore', 'Realtime Database', 'Go (Golang)'], text: 'Full-stack applications, user accounts, content management, data persistence and calculation rules integrated with the frontend. Additional experience with Firebase Cloud Firestore for application data and Firebase Realtime Database for live chat. Go (Golang) in personal projects.' },
       { number: '03', title: 'Delivery and quality', tags: ['Git', 'Docker', 'AWS EC2', 'Google Cloud', 'Sentry', 'LogRocket', 'Unit testing'], text: 'Cloud deployment, production troubleshooting and work in codebases with unit tests and QA validation.' },
-      { number: '04', title: 'AI tools', tags: ['Claude Code', 'Codex', 'Lovable'], text: 'I am currently integrating Claude Code and Codex into development and testing workflows. I also use Lovable to create landing pages for clients.' },
+      { number: '04', title: 'AI tools', tags: ['Claude Code', 'Codex (ChatGPT)', 'Lovable'], text: 'I am currently integrating Claude Code and Codex into development and testing workflows. I also use Lovable to create landing pages for clients.' },
     ],
   },
   education: {

@@ -42,3 +42,6 @@ footer .inline-icon { width: 12px; height: 12px; }
   .menu-button { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; }
   .contact-arrow svg { width: 36px; height: 36px; }
 }
+
+/* Allow the core technology list to wrap as it grows. */
+.stack-strip { flex-wrap: wrap; }

@@ -13,15 +13,15 @@ const experience = [
 ]
 const skills = [
   { number: '01', title: 'Frontend', tags: ['JavaScript', 'Vue.js', 'React', 'Nuxt.js', 'Inertia.js'], text: 'Interfaces web, integración con APIs, flujos de administración y lógica de negocio. Experiencia con actualizaciones en tiempo real y manejo de conexiones.' },
-  { number: '02', title: 'Backend y datos', tags: ['Laravel', 'Java Spring', 'MySQL'], text: 'Aplicaciones full stack, cuentas de usuario, gestión de contenido, persistencia de datos y reglas de cálculo conectadas con el frontend.' },
+  { number: '02', title: 'Backend y datos', tags: ['Node.js', 'Laravel', 'Java Spring', 'MySQL', 'Cloud Firestore', 'Realtime Database', 'Go (Golang)'], text: 'Aplicaciones full stack, cuentas de usuario, gestión de contenido, persistencia de datos y reglas de cálculo conectadas con el frontend. Experiencia adicional con Firebase Cloud Firestore para datos de aplicaciones y Firebase Realtime Database para chat en vivo. Go (Golang) en proyectos personales.' },
   { number: '03', title: 'Entrega y calidad', tags: ['Git', 'Docker', 'AWS EC2', 'Google Cloud', 'Sentry', 'LogRocket', 'Pruebas unitarias'], text: 'Despliegue en la nube, diagnóstico de errores en producción y trabajo en bases de código con pruebas unitarias y validación de QA.' },
-  { number: '04', title: 'Herramientas de IA', tags: ['Claude Code', 'Codex', 'Lovable'], text: 'Actualmente integro Claude Code y Codex en los flujos de desarrollo y pruebas. También utilizo Lovable para crear landing pages para clientes.' }
+  { number: '04', title: 'Herramientas de IA', tags: ['Claude Code', 'Codex (ChatGPT)', 'Lovable'], text: 'Actualmente integro Claude Code y Codex en los flujos de desarrollo y pruebas. También utilizo Lovable para crear landing pages para clientes.' }
 ]
 
 export default {
   meta: {
     title: 'Marco Castillo · Full Stack Developer',
-    description: 'Marco Castillo, Full Stack Developer en Guadalajara. Experiencia en Vue.js, React, Java Spring, Laravel, aplicaciones en tiempo real y despliegues en la nube.',
+    description: 'Marco Castillo, Full Stack Developer en Guadalajara. Experiencia en Vue.js, React, Node.js, Java Spring, Laravel, aplicaciones en tiempo real y despliegues en la nube.',
   },
   header: {
     skip: 'Saltar al contenido', home: 'Marco Castillo, inicio', navigation: 'Navegación principal',
@@ -33,7 +33,7 @@ export default {
   },
   profile: {
     intro: ['De la lógica de negocio', 'a una interfaz que funciona'],
-    summary: 'Desarrollador de software en Guadalajara, México. Construyo aplicaciones con Vue.js, React, Laravel y Java Spring, con experiencia en sistemas en tiempo real y despliegues en la nube.',
+    summary: 'Desarrollador de software en Guadalajara, México. Construyo aplicaciones con Vue.js, React, Node.js, Laravel y Java Spring, con experiencia en sistemas en tiempo real y despliegues en la nube.',
     explore: 'Explora mi experiencia', download: 'Descargar CV', location: 'GUADALAJARA, MÉXICO', stackLabel: 'Tecnologías principales',
   },
   experience: {
