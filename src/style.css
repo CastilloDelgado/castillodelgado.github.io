@@ -67,3 +67,53 @@ footer .inline-icon { width: 12px; height: 12px; }
 .saldo-preview p { font-size: 16px; margin: 10px 0 24px; }
 .saldo-categories { display: flex; flex-wrap: wrap; gap: 8px; }
 .saldo-categories span { padding: 8px 12px; border: 1px solid #073e3440; border-radius: 20px; font-size: 11px; }
+
+:root { --surface: #edf1e7; --on-accent: #fff; color-scheme: light; }
+/* Keep the illustrated previews legible independently of the page theme. */
+.mock-browser { color: #123f35; }
+.contact-links { flex-wrap: wrap; }
+@media screen {
+  :root[data-theme='dark'] {
+    color-scheme: dark;
+    color: #e4ecdf;
+    background: #101b17;
+    --green: #d4efa9;
+    --muted: #adbdaf;
+    --line: #34483b;
+    --surface: #1b2d24;
+    --on-accent: #101b17;
+  }
+  [data-theme='dark'] .header { background: #101b17ed; }
+  [data-theme='dark'] .stack-strip,
+  [data-theme='dark'] .additional { background: var(--surface); }
+  [data-theme='dark'] .projects-section { background: #15231c; }
+  [data-theme='dark'] h1 > span:first-child { color: #a5bd96; }
+  [data-theme='dark'] .date,
+  [data-theme='dark'] .project-info > .eyebrow { color: #b8cba7; }
+  [data-theme='dark'] .skill-number,
+  [data-theme='dark'] .job-index,
+  [data-theme='dark'] .stack-strip i { color: #9fb495; }
+  [data-theme='dark'] .primary,
+  [data-theme='dark'] .skip-link { color: var(--on-accent); }
+  [data-theme='dark'] .primary:hover { background: #bade8c; }
+  [data-theme='dark'] .header nav > a:hover,
+  [data-theme='dark'] .text-link:hover { color: #d4efa9; }
+  [data-theme='dark'] .contact-section { background: #0b1611; }
+  [data-theme='dark'] .art-number { color: #123f35; }
+  [data-theme='dark'] .hue-art .art-number { color: #e4f4bf; }
+}
+@media screen and (max-width: 700px) {
+  [data-theme='dark'] .header nav { background: #101b17; }
+  .header-controls { gap: 6px; }
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .header { gap: 12px; padding-inline: 20px; }
+  .header nav { gap: 12px; font-size: 11px; }
+  .header-controls { gap: 8px; }
+}
+
+.project { min-width: 0; }
+.project-info > .eyebrow { overflow-wrap: anywhere; }
+@media (max-width: 700px) {
+  .contact-heading h2 { font-size: clamp(30px, 8.8vw, 43px); letter-spacing: -1.2px; }
+}

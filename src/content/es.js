@@ -26,6 +26,7 @@ export default {
   header: {
     skip: 'Saltar al contenido', home: 'Marco Castillo, inicio', navigation: 'Navegación principal',
     language: 'Seleccionar idioma', menu: 'Menú', close: 'Cerrar', contact: 'Hablemos',
+    theme: { dark: 'Activar tema oscuro', light: 'Activar tema claro' },
     sections: [
       { id: 'proyectos', label: 'Proyectos' }, { id: 'perfil', label: 'Perfil' },
       { id: 'experiencia', label: 'Experiencia' }, { id: 'conocimientos', label: 'Conocimientos' },

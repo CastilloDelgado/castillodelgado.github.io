@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { ArrowUpRight, Menu, X } from '@lucide/vue'
 import LanguageToggle from './ui/LanguageToggle.vue'
+import ThemeToggle from './ui/ThemeToggle.vue'
 
 defineProps({ content: { type: Object, required: true }, locale: { type: String, required: true } })
 defineEmits(['language-change'])
@@ -17,6 +18,7 @@ const menuOpen = ref(false)
       <a class="nav-contact" href="#contacto" @click="menuOpen = false">{{ content.contact }} <ArrowUpRight class="inline-icon" aria-hidden="true" focusable="false" /></a>
     </nav>
     <div class="header-controls">
+      <ThemeToggle :labels="content.theme" />
       <LanguageToggle :locale="locale" :label="content.language" @change="$emit('language-change', $event)" />
       <button class="menu-button" type="button" @click="menuOpen = !menuOpen" :aria-expanded="menuOpen" aria-controls="navigation">
         {{ menuOpen ? content.close : content.menu }}

@@ -6,6 +6,7 @@ export default {
   header: {
     skip: 'Skip to content', home: 'Marco Castillo, home', navigation: 'Main navigation',
     language: 'Select language', menu: 'Menu', close: 'Close', contact: 'Let’s talk',
+    theme: { dark: 'Switch to dark theme', light: 'Switch to light theme' },
     sections: [
       { id: 'proyectos', label: 'Projects' }, { id: 'perfil', label: 'Profile' },
       { id: 'experiencia', label: 'Experience' }, { id: 'conocimientos', label: 'Skills' },

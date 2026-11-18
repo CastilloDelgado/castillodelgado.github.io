@@ -22,7 +22,7 @@ defineEmits(['change'])
 <style scoped>
 .language-toggle { display: flex; padding: 3px; border: 1px solid var(--line); border-radius: 5px; gap: 2px; }
 button { border: 0; border-radius: 3px; background: transparent; color: var(--green); padding: 8px 10px; font: 11px 'Space Mono', monospace; cursor: pointer; min-height: 34px; }
-button[aria-pressed='true'] { background: var(--green); color: #fff; }
-button[aria-pressed='false']:hover { background: #edf1e7; }
+button[aria-pressed='true'] { background: var(--green); color: var(--on-accent); }
+button[aria-pressed='false']:hover { background: var(--surface); }
 @media (max-width: 700px) { button { min-height: 36px; padding: 8px; } }
 </style>
