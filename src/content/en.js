@@ -7,8 +7,8 @@ export default {
     skip: 'Skip to content', home: 'Marco Castillo, home', navigation: 'Main navigation',
     language: 'Select language', menu: 'Menu', close: 'Close', contact: 'Let’s talk',
     sections: [
-      { id: 'perfil', label: 'Profile' }, { id: 'experiencia', label: 'Experience' },
-      { id: 'proyectos', label: 'Projects' }, { id: 'conocimientos', label: 'Skills' },
+      { id: 'proyectos', label: 'Projects' }, { id: 'perfil', label: 'Profile' },
+      { id: 'experiencia', label: 'Experience' }, { id: 'conocimientos', label: 'Skills' },
     ],
   },
   profile: {
@@ -17,7 +17,7 @@ export default {
     explore: 'Explore my experience', downloads: { es: 'CV in Spanish', en: 'CV in English' }, location: 'GUADALAJARA, MEXICO', stackLabel: 'Core technologies',
   },
   experience: {
-    heading: { eyebrow: '01 / EXPERIENCE', title: ['Experience that', 'ships to production.'], note: 'Business applications, real-time interfaces and problem-solving in production environments.' },
+    heading: { eyebrow: '02 / EXPERIENCE', title: ['Experience that', 'ships to production.'], note: 'Business applications, real-time interfaces and problem-solving in production environments.' },
     jobs: [
       {
         company: 'Lagersoft Games', role: 'Frontend Developer', date: '2023 — 2026',
@@ -59,19 +59,51 @@ export default {
     },
   },
   projects: {
-    heading: { eyebrow: '02 / INDEPENDENT PROJECTS', title: ['Personal ideas.', 'End-to-end development.'], note: 'Projects that connect interfaces, data and infrastructure, and explore new ways to interact.' },
+    links: { site: 'Visit website', repository: 'View repository' },
+    heading: { eyebrow: '01 / PROJECTS', title: ['Personal and client projects.', 'End-to-end development.'], note: 'Projects that connect interfaces, data and infrastructure, and explore new ways to interact.' },
     items: [
       {
-        id: 'blog', number: '01', label: 'FULL STACK / DEPLOYED ON AWS', title: 'Blog platform',
-        art: { label: 'IDEAS / CODE / NOTES', title: ['One idea.', 'A new post.'] },
+        id: 'saldo', number: '01', label: 'APPLICATION / PERSONAL FINANCE', title: 'Saldo',
+        site: 'https://mieconomia.tech',
+        art: { domain: 'mieconomia.tech', label: 'PERSONAL FINANCE', title: ['Saldo.', 'Your finances in order.'], categories: ['Credit cards', 'Savings', 'Expenses'] },
         paragraphs: [
-          'A full-stack blog I built and administer, with user accounts and tools for creating, editing and deleting posts, as well as uploading images.',
-          'Laravel and Vue.js are connected through Inertia.js, with MySQL as the database. Deployed using EC2 instances and AWS buckets.',
+          'A personal finance application I built to manage credit cards, organize savings and track expenses.',
+          'Built with Flask and connected to Google Cloud Platform (GCP) for user management. Deployed with Docker on a Hostinger VPS.',
         ],
-        tags: ['Laravel', 'Vue.js', 'Inertia.js', 'MySQL', 'AWS'],
+        tags: ['Flask', 'Google Cloud Platform', 'Docker', 'Hostinger', 'VPS'],
       },
       {
-        id: 'hue', number: '02', label: 'IOT / IN DEVELOPMENT', title: 'Philips Hue animation editor',
+        id: 'blog', number: '02', label: 'BLOG / ART PROJECT', title: 'Metachromatic',
+        site: 'https://metachromatic.online',
+        art: { domain: 'metachromatic.online', stack: 'Laravel + Vue.js', label: 'ART / PROCESS / DOCUMENTATION', title: ['Metachromatic.', 'An artistic process.'] },
+        paragraphs: [
+          'A blog I built to document an art project and share its process.',
+          'Built with Laravel and Vue.js, using MariaDB as the database. Deployed in a Docker container on a private VPS.',
+        ],
+        tags: ['Laravel', 'Vue.js', 'MariaDB', 'Docker', 'VPS'],
+      },
+      {
+        id: 'mjf', number: '03', label: 'BUSINESS WEBSITE / ELECTRICAL INSTALLATIONS', title: 'MJF-SE',
+        site: 'https://mjf-se.com',
+        art: { domain: 'mjf-se.com', stack: 'Lovable + Hostinger', label: 'INSTALLATIONS / COMPANY / SERVICES', title: ['MJF-SE.', 'Electrical installations.'] },
+        paragraphs: [
+          'A website I created with Lovable for an electrical installation company, published on Hostinger hosting.',
+          'I also administered the company’s Google Cloud Platform (GCP) environment for email, storage and some internal processes.',
+        ],
+        tags: ['Lovable', 'Hostinger', 'Google Cloud Platform'],
+      },
+      {
+        id: 'cti', number: '04', label: 'BUSINESS WEBSITE / THERMAL INSULATION', title: 'CTI Aislamientos',
+        site: 'https://cti-aislamientos.com',
+        art: { domain: 'cti-aislamientos.com', stack: 'Lovable + Hostinger', label: 'INSTALLATIONS / COMPANY / SERVICES', title: ['CTI Aislamientos.', 'Thermal insulation.'] },
+        paragraphs: [
+          'A website I created with Lovable for a thermal insulation installation company, published on Hostinger hosting.',
+          'I also administered the company’s Google Cloud Platform (GCP) environment for email, storage and some internal processes.',
+        ],
+        tags: ['Lovable', 'Hostinger', 'Google Cloud Platform'],
+      },
+      {
+        id: 'hue', number: '05', label: 'IOT / IN DEVELOPMENT', title: 'Philips Hue animation editor',
         art: { title: ['LIGHT', 'IN MOTION'] },
         paragraphs: [
           'A visual interface for creating lighting animations and saving them to a user profile, with account registration.',

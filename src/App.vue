@@ -14,9 +14,9 @@ const { locale, content, setLanguage } = useLanguage()
 <template>
   <SiteHeader :content="content.header" :locale="locale" @language-change="setLanguage" />
   <main id="contenido">
+    <ProjectsSection :content="content.projects" />
     <ProfileSection :content="content.profile" />
     <ExperienceSection :content="content.experience" />
-    <ProjectsSection :content="content.projects" />
     <SkillsSection :content="content.skills" />
     <EducationSection :content="content.education" />
     <ContactSection :content="content.contact" />

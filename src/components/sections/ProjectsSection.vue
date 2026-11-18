@@ -9,7 +9,7 @@ defineProps({ content: { type: Object, required: true } })
   <section id="proyectos" class="projects-section">
     <div class="container section">
       <SectionHeading :heading="content.heading" />
-      <div class="project-grid"><ProjectCard v-for="project in content.items" :key="project.id" :project="project" /></div>
+      <div class="project-grid"><ProjectCard v-for="project in content.items" :key="project.id" :project="project" :link-labels="content.links" /></div>
     </div>
   </section>
 </template>

@@ -27,8 +27,8 @@ export default {
     skip: 'Saltar al contenido', home: 'Marco Castillo, inicio', navigation: 'Navegación principal',
     language: 'Seleccionar idioma', menu: 'Menú', close: 'Cerrar', contact: 'Hablemos',
     sections: [
-      { id: 'perfil', label: 'Perfil' }, { id: 'experiencia', label: 'Experiencia' },
-      { id: 'proyectos', label: 'Proyectos' }, { id: 'conocimientos', label: 'Conocimientos' },
+      { id: 'proyectos', label: 'Proyectos' }, { id: 'perfil', label: 'Perfil' },
+      { id: 'experiencia', label: 'Experiencia' }, { id: 'conocimientos', label: 'Conocimientos' },
     ],
   },
   profile: {
@@ -37,7 +37,7 @@ export default {
     explore: 'Explora mi experiencia', downloads: { es: 'CV en español', en: 'CV en inglés' }, location: 'GUADALAJARA, MÉXICO', stackLabel: 'Tecnologías principales',
   },
   experience: {
-    heading: { eyebrow: '01 / TRAYECTORIA', title: ['Experiencia que', 'se lleva a producción.'], note: 'Aplicaciones de negocio, interfaces en tiempo real y resolución de problemas en entornos reales.' },
+    heading: { eyebrow: '02 / TRAYECTORIA', title: ['Experiencia que', 'se lleva a producción.'], note: 'Aplicaciones de negocio, interfaces en tiempo real y resolución de problemas en entornos reales.' },
     jobs: experience,
     additional: {
       label: 'TAMBIÉN EN MI TRAYECTORIA', title: 'Ingeniería y diagnóstico electrónico',
@@ -48,19 +48,51 @@ export default {
     },
   },
   projects: {
-    heading: { eyebrow: '02 / PROYECTOS INDEPENDIENTES', title: ['Ideas propias.', 'Desarrollo de punta a punta.'], note: 'Proyectos para conectar interfaces, datos e infraestructura, y explorar nuevas formas de interacción.' },
+    links: { site: 'Ver página', repository: 'Ver repositorio' },
+    heading: { eyebrow: '01 / PROYECTOS', title: ['Proyectos propios y para clientes.', 'Desarrollo de punta a punta.'], note: 'Proyectos para conectar interfaces, datos e infraestructura, y explorar nuevas formas de interacción.' },
     items: [
       {
-        id: 'blog', number: '01', label: 'FULL STACK / DESPLEGADO EN AWS', title: 'Plataforma de blog',
-        art: { label: 'IDEAS / CÓDIGO / NOTAS', title: ['Una idea.', 'Un nuevo post.'] },
+        id: 'saldo', number: '01', label: 'APLICACIÓN / FINANZAS PERSONALES', title: 'Saldo',
+        site: 'https://mieconomia.tech',
+        art: { domain: 'mieconomia.tech', label: 'FINANZAS PERSONALES', title: ['Saldo.', 'Tus finanzas en orden.'], categories: ['Tarjetas de crédito', 'Ahorros', 'Gastos'] },
         paragraphs: [
-          'Blog full stack que desarrollé y administro, con cuentas de usuario y herramientas para crear, editar y eliminar publicaciones, además de cargar imágenes.',
-          'Laravel y Vue.js se conectan mediante Inertia.js, con MySQL como base de datos. Despliegue con instancias EC2 y buckets de AWS.',
+          'Aplicación de finanzas personales que desarrollé para administrar tarjetas de crédito, organizar ahorros y llevar el control de gastos.',
+          'Creada con Flask y conectada a Google Cloud Platform (GCP) para la administración de usuarios. Desplegada con Docker en un VPS de Hostinger.',
         ],
-        tags: ['Laravel', 'Vue.js', 'Inertia.js', 'MySQL', 'AWS'],
+        tags: ['Flask', 'Google Cloud Platform', 'Docker', 'Hostinger', 'VPS'],
       },
       {
-        id: 'hue', number: '02', label: 'IOT / EN DESARROLLO', title: 'Editor de animaciones Philips Hue',
+        id: 'blog', number: '02', label: 'BLOG / PROYECTO ARTÍSTICO', title: 'Metachromatic',
+        site: 'https://metachromatic.online',
+        art: { domain: 'metachromatic.online', stack: 'Laravel + Vue.js', label: 'ARTE / PROCESO / DOCUMENTACIÓN', title: ['Metachromatic.', 'Un proceso artístico.'] },
+        paragraphs: [
+          'Blog que desarrollé para documentar un proyecto artístico y compartir su proceso.',
+          'Desarrollado con Laravel y Vue.js, con MariaDB como base de datos. Desplegado en un VPS privado dentro de un contenedor Docker.',
+        ],
+        tags: ['Laravel', 'Vue.js', 'MariaDB', 'Docker', 'VPS'],
+      },
+      {
+        id: 'mjf', number: '03', label: 'WEB CORPORATIVA / INSTALACIONES ELÉCTRICAS', title: 'MJF-SE',
+        site: 'https://mjf-se.com',
+        art: { domain: 'mjf-se.com', stack: 'Lovable + Hostinger', label: 'INSTALACIONES / EMPRESA / SERVICIOS', title: ['MJF-SE.', 'Instalaciones eléctricas.'] },
+        paragraphs: [
+          'Página web que creé con Lovable para una empresa de instalaciones eléctricas, publicada en hosting de Hostinger.',
+          'También administré el entorno de Google Cloud Platform (GCP) de la empresa para sus correos, almacenamiento y algunos procesos internos.',
+        ],
+        tags: ['Lovable', 'Hostinger', 'Google Cloud Platform'],
+      },
+      {
+        id: 'cti', number: '04', label: 'WEB CORPORATIVA / AISLAMIENTO TÉRMICO', title: 'CTI Aislamientos',
+        site: 'https://cti-aislamientos.com',
+        art: { domain: 'cti-aislamientos.com', stack: 'Lovable + Hostinger', label: 'INSTALACIONES / EMPRESA / SERVICIOS', title: ['CTI Aislamientos.', 'Aislamiento térmico.'] },
+        paragraphs: [
+          'Página web que creé con Lovable para una empresa de instalación de aislamiento térmico, publicada en hosting de Hostinger.',
+          'También administré el entorno de Google Cloud Platform (GCP) de la empresa para sus correos, almacenamiento y algunos procesos internos.',
+        ],
+        tags: ['Lovable', 'Hostinger', 'Google Cloud Platform'],
+      },
+      {
+        id: 'hue', number: '05', label: 'IOT / EN DESARROLLO', title: 'Editor de animaciones Philips Hue',
         art: { title: ['LUZ EN', 'MOVIMIENTO'] },
         paragraphs: [
           'Interfaz visual para crear animaciones de iluminación y guardarlas en un perfil de usuario, con registro de cuentas.',
